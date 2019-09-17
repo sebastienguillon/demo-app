@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let eleve of eleves">
+    {{ eleve.prenom }}
+    {{ eleve.nom }}
+    {{ eleve.age }}
+  </li>
+</ul>
+
+<button (mouseover)="ajouterEleve('Jean-François')">Ajouter un élève</button>

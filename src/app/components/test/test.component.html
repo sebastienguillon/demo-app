@@ -1,0 +1,13 @@
+<h2>{{ message }}</h2>
+<p>Je suis le composabnt de test</p>
+
+<p>Mon adresse IP : {{ ip }}</p>
+<button (click)="getMyIp()">Affiche mon IP</button>
+
+
+<!-- <button (click)="getMd5('Hello World!')">MD5</button> -->
+
+<input type="text" [(ngModel)]="message" (keyup)="filterQuery()">
+
+<p>{{ message }}</p>
+
