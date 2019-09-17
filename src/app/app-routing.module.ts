@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'eleves',
     component: ElevesComponent,
+  },
+  {
+    path: 'eleves/:id',
+    component: ElevesComponent,
   }
 ];
 

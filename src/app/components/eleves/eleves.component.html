@@ -1,5 +1,5 @@
 <ul>
-  <li *ngFor="let eleve of eleves">
+  <li *ngFor="let eleve of eleves; let id = index" routerLink="/eleves/{{ id }}">
     {{ eleve.prenom }}
     {{ eleve.nom }}
     {{ eleve.age }}
