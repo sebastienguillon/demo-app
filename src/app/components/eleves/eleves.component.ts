@@ -12,6 +12,7 @@ import { map } from 'rxjs/operators';
 export class ElevesComponent implements OnInit {
   eleves = [];
   eleveIdx: number;
+  receivedCount: number;
 
   constructor(
     private route: ActivatedRoute,
@@ -37,6 +38,10 @@ export class ElevesComponent implements OnInit {
       prenom: '',
     };
     this.serviceEleves.eleves.push(nouvelEleve);
+  }
+
+  displayCount(val) {
+    this.receivedCount = val;
   }
 
 }
