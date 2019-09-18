@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './components/test/test.component';
 import { ElevesComponent } from './components/eleves/eleves.component';
 import { EleveComponent } from './components/eleve/eleve.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EleveComponent } from './components/eleve/eleve.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

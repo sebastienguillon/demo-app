@@ -1,7 +1,7 @@
-<ul>
-  <li *ngFor="let eleve of eleves; let id = index">
+<div class="row">
+  <div class="col-sm-3" *ngFor="let eleve of eleves; let id = index">
     <app-eleve [eleve]="eleve" (countEvent)="displayCount($event)" [idx]=id></app-eleve>
-  </li>
-</ul>
+  </div>
+</div>
 <p>Nombre reçu : {{ receivedCount }}</p>
 <button (mouseover)="ajouterEleve('Jean-François')">Ajouter un élève</button>
